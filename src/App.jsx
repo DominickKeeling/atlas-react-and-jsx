@@ -1,6 +1,9 @@
 import React from 'react';
 import Header from "./components/Header";
 import Section from "./components/Section";
+import HelpfulResource from './components/HelpfulResource';
+import AboutMe from './components/AboutMe';
+import Footer from './components/Footer';
 
 export function App() {
   return (
@@ -19,6 +22,15 @@ export function App() {
           <li>Extensive documentation</li>
         </ul>
       </Section>
+      <Section title="Helpful Resources">
+        <HelpfulResource link="https://atlas-jswank.github.io/blog/hello-react/" label="Jeremiah Swank: Hello React" />
+        <HelpfulResource link="https://atlas-jswank.github.io/blog/jsx/" label="Jeremiah Swank: JSX" />
+        <HelpfulResource link="https://atlas-jswank.github.io/blog/es-modules/" label="Jeremiah Swank: ES Modules" />
+      </Section>
+      <Section>
+        <AboutMe />
+      </Section>
+      <Footer />
     </div>
   );
 }
